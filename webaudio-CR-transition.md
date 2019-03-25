@@ -1,5 +1,7 @@
 # Transition request, Web Audio API to Candidate Recommendation
 
+see https://github.com/w3c/transitions/issues/89
+
 ## Document title, URLs, estimated publication date
 
 Web Audio API
@@ -15,53 +17,24 @@ Date:
 
 ## Abstract
 
-See https://webaudio.github.io/web-audio-api/#h-abstract
+See https://www.w3.org/TR/webaudio/#abstract
 
 ## Status
 
-The Working Group expects to demonstrate 2 implementations of the
-features listed in this specification by the end of the Candidate
-Recommendation phase.
-
-This document was published by the Web Audio Working Group as a
-Candidate Recommendation. This document is intended to become a W3C
-Recommendation. If you wish to make comments regarding this document,
-please send them to the GitHub repository. You may also use the mailing
-list public-audiof@w3.org (subscribe, archives) with [WebAudio] 
-at the start of your email's subject. W3C publishes a
-Candidate Recommendation to indicate that the document is believed 
-to be  stable and to encourage implementation by the developer community. 
-This Candidate Recommendation is expected to advance to Proposed
-Recommendation no earlier than 1 July 2017. All comments are welcome.
-
-Please see the Working Group's draft implementation report.
-
-Publication as a Candidate Recommendation does not imply endorsement by
-the W3C Membership. This is a draft document and may be updated,
-replaced or obsoleted by other documents at any time. It is
-inappropriate to cite this document as other than work in progress.
-
-This document was produced by a group operating under the 5 February
-2004 W3C Patent Policy. W3C maintains a public list of any patent
-disclosures made in connection with the deliverables of the group; that
-page also includes instructions for disclosing a patent. An individual
-who has actual knowledge of a patent which the individual believes
-contains Essential Claim(s) must disclose the information in accordance
-with section 6 of the W3C Patent Policy.
-
-This document is governed by the 1 September 2015 W3C Process Document.
+See https://www.w3.org/TR/webaudio/#sotd (as WD)
 
 ## Link to group's decision to request transition
 
-RESOLUTION: move Web Audio 1.0 to Candidate Recommendation
+[12:12] <mdjp> Agreement on transition request https://github.com/WebAudio/web-audio-api/blob/master/webaudio-CR-transition.md
 
-https://www.w3.org/2017/10/19-audio-minutes.html#item02
+[12:13] <mdjp> All in favour
+   
+[6 Sept 2018 telcon](https://www.w3.org/2018/09/06-audio-irc#T16-13-12-53).
+
 
 ## Changes
 
-https://github.com/WebAudio/web-audio-api/commits/gh-pages
-
-The last Working Draft on 8 December 2015 introduced a substantive 
+The Working Draft of 8 December 2015 introduced a substantive 
 change: the deprecation of the old extensibility point, ScriptProcessorNode and its replacement 
 with AudioWorker.
 
@@ -69,6 +42,15 @@ Since then, substantial effort has gone into fleshing out details of the AudioWo
 https://webaudio.github.io/web-audio-api/#AudioWorklet
 
 This was done in coordination with the Houdini taskforce, which specified Worklet and also PaintWorklet.
+
+An updated draft was published on 19 June 2018 for wide review.
+
+Changes between the 8 December 2015 Working Draft and the 19 June 2018 draft are listed in the changes section
+https://webaudio.github.io/web-audio-api/#changestart
+
+More recent changes are listed here
+https://github.com/WebAudio/web-audio-api/commits/master
+and will be added to a separate changes subsection
 
 The remainder of Web Audio API is stable, has multiple implementations, and is widely used.
 
@@ -87,8 +69,12 @@ Web Audio tests for AudioWorklet will help test Worklet as well.
 
 ## Wide Review
 
+The most recent Working Draft was published on 19 June 2018
+https://www.w3.org/TR/2018/WD-webaudio-20180619/
+
 The specification has received wide review, including presentation and active discussion 
-at three sucessful Web Audio conferences and uptake by an entusiastic developer community. 
+at three sucessful Web Audio conferences (fourth conference to take place September 2018)
+and uptake by an enthusiastic developer community. 
 These conferences have included public plenary sessions with the working group. 
 
 [WAC 2015 http://wac.ircam.fr/](http://wac.ircam.fr/)
@@ -96,6 +82,8 @@ These conferences have included public plenary sessions with the working group.
 [WAC 2016 http://webaudio.gatech.edu/](http://webaudio.gatech.edu/)
 
 [WAC 2017 http://wac.eecs.qmul.ac.uk/](http://wac.eecs.qmul.ac.uk/)
+
+[WAC 2018 https://webaudioconf.com/](https://webaudioconf.com/)
 
 
 
@@ -108,6 +96,7 @@ https://github.com/WebAudio/web-audio-api/issues
 
 There is a security and privacy appendix
   https://webaudio.github.io/web-audio-api/#Security-Privacy-Considerations
+This benefitted from review and contributions of the Privacy Interest Group.
   
 ### Accessibility:
 
@@ -124,8 +113,11 @@ a problem for Internationalization.
 
 ### TAG:
 
-This specification has benefitted from extensive review by the TAG. Domenic Denicola was the lead 
-reviewer. Changes were made in response to this review, and the TAG appears satisfied.
+This specification benefitted from extensive review by the TAG. Domenic Denicola was the lead 
+reviewer. Changes were made in response to this review, and the TAG appeared satisfied.
+
+To verify this, a [second round of TAG review](https://github.com/w3ctag/design-reviews/issues/212)  
+was initiated in Nov 2017. The spec was discussed with the TAG at their London f2f, and TAG confirmed they were satisfied.
 
 ## Issues addressed
 
@@ -133,11 +125,11 @@ The issues list is on GitHub:
 
 https://github.com/WebAudio/web-audio-api/issues
 
-There are currently 77 open issues and 833 closed. 
+There are currently 80 open issues and 978 closed. 
 
-Of those, 81 were feature requests that were [deferred to the next version](https://github.com/WebAudio/web-audio-api/milestone/2)
+Of those, 95 were feature requests that were [deferred to the next version](https://github.com/WebAudio/web-audio-api/milestone/2)
 
-WebAudio v.1 has [3 open issues and 365 closed](https://github.com/WebAudio/web-audio-api/milestone/1); the remaining 3 issues are all agreed by the WG, have PR, and are being merged in the next couple of days.
+WebAudio v.1 has [13 open issues and 433 closed](https://github.com/WebAudio/web-audio-api/milestone/1); these are primarily editorial clarifications.
 
 ## Formal Objections
 
@@ -156,10 +148,14 @@ https://webaudio.github.io/web-audio-api/implementation-report.html
 There are no features at risk.
 
 A test suite is in progress and available at
- https://github.com/w3c/web-platform-tests/tree/master/webaudio
+ https://github.com/web-platform-tests/wpt/tree/master/webaudio
+ 
+WPT.fy results are available (with the usual caveats regarding browser versions, etc)
+  https://wpt.fyi/results/webaudio/the-audio-api
 
 Mojitests from Mozilla are being converted to WPT format and will be pushed upstream to the WPR repo. These are all upstream reviewed.
-Google also has extensive tests; these have all been converted to WPT format and are being pushed to WPT. These are all upstream reviewed.
+Google also has extensive tests; these have now all been converted to WPT format, and have been pushed to WPT. These are all upstream reviewed. The tracking issue for test migration is 
+https://github.com/WebAudio/web-audio-api/issues/1388
 
 During the CR period, the WG expects to remove any test duplication and look for any untested areas.
 
